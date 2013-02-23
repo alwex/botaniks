@@ -1,0 +1,22 @@
+/* 
+    Document   : base
+    Created on : 27 déc. 2012, 13:49:53
+    Author     : noelie
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+.page-content {
+    width: 80%;
+    margin: 0 auto;
+}
+

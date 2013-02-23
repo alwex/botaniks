@@ -1,0 +1,44 @@
+<!-- application/layouts/scripts/layout.phtml -->
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Botaniks</title>
+        <?php echo $this->headLink()->appendStylesheet('/css/base.css') ?>
+        <?php echo $this->headLink()->appendStylesheet('/css/bootstrap.css') ?>
+        <?php echo $this->headLink()->appendStylesheet('/css/bootstrap-responsive.css') ?>
+        <?php echo $this->headScript()->appendFile('js/jquery-latest.js', 'text/javascript') ?>
+        <?php echo $this->headScript()->appendFile('js/bootstrap.js', 'text/javascript') ?>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+                <a class="brand" href="#">Bot@niks</a>
+                <ul class="nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Projets</a></li>
+                    <li><a href="#">Plantes</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-target="#">
+                            Administration
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                            <li><a href="/category">Categories</a></li>
+                            <li><a href="/node">Noeuds</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-search pull-right">
+                    <input type="text" class="search-query" placeholder="Search">
+                </form>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <?php /* <a href="<?php echo $this->url(array('controller' => 'guestbook'), 'default', true) ?>">Guestbook</a> */ ?>
+            <?php echo $this->layout()->content ?>
+        </div>
+
+    </body>
+</html>

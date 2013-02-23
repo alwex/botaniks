@@ -1,0 +1,30 @@
+<h2>Edition de la catégorie <?php echo $this->category->getLabel() ?></h2>
+
+<h3>Ajouter un attribut</h3>
+<?php $this->form->setAction($this->url()) ?>
+<?php echo $this->form; ?>
+
+<h3>Liste des attributs</h3>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>label</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($this->categoryAttributes as $categoryAttribute) : ?>
+            <tr>
+                <td><?php echo $categoryAttribute->getLabel() ?></td>
+                <td>
+                    <a href="/category-attribute/edit/id/<?php echo $categoryAttribute->getId() ?>">
+                        <i class="icon-pencil"></i>
+                    </a>
+                    <a href="/category-attribute/delete/id/<?php echo $categoryAttribute->getId() ?>/url/<?php echo base64_encode($this->url); ?>">
+                        <i class="icon-remove-sign"></i>
+                    </a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>

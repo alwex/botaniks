@@ -1,0 +1,24 @@
+<h2>Liste des catégories</h2>
+<p>
+    <a href="/category/add">Ajouter une catégorie</a>
+</p>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>nom</th>
+            <th>attributs</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($this->categories as $category) : ?>
+            <tr>
+                <td><?php echo $category->getId() ?></td>
+                <td><?php echo $category->getLabel() ?></td>
+                <td><?php foreach ($category->getCategoryAttributes() as $categoryAttribute) : echo $categoryAttribute->getLabel() . "<br />"; endforeach;?></td>
+                <td><a href="/category/edit/id/<?php echo $category->getId() ?>"><i class="icon-pencil"></i></a></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>

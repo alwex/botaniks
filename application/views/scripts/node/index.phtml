@@ -1,0 +1,35 @@
+<h2>Liste des catégories</h2>
+<p>
+    <a href="/node/add">Ajouter un Noeud</a>
+</p>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>categorie</th>
+            <th>nom</th>
+            <th>attributs</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($this->nodes as $node) : ?>
+            <tr>
+                <td><?php echo $node->getId() ?></td>
+                <td><?php echo $node->getCategory()->getLabel() ?></td>
+                <td><?php echo $node->getLabel() ?></td>
+                <td>
+                    <?php foreach ($node->getNodeAttributes() as $nodeAttribute) : ?>
+                        <?php echo $nodeAttribute->getLabel() . "<br />"; ?>
+                        <?php echo "&nbsp;&nbsp;&nbsp;&nbsp;<i>" . $nodeAttribute->getValue() . "</i><br />"; ?>
+                    <?php endforeach;?></td>
+                <td>
+                    <a href="/node/edit/id/<?php echo $node->getId() ?>"><i class="icon-pencil"></i></a>
+                    <a href="/node/delete/id/<?php echo $node->getId() ?>/url/<?php echo base64_encode($this->url); ?>">
+                        <i class="icon-remove-sign"></i>
+                    </a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
