@@ -45,6 +45,8 @@ class CategoryAttributeController extends Zend_Controller_Action
 			{
 				$categoryAttribute->assign($form->getValues());
 				$categoryAttribute->save();
+
+				$this->redirect($url);
 			}
 		}
 

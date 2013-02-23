@@ -19,7 +19,7 @@
                 <td><?php echo $categoryAttribute->getLabel() ?></td>
                 <td><?php echo $categoryAttribute->getWeight() ?></td>
                 <td>
-                    <a href="/category-attribute/edit/id/<?php echo $categoryAttribute->getId() ?>">
+                    <a href="/category-attribute/edit/id/<?php echo $categoryAttribute->getId() ?>/url/<?php echo base64_encode($this->url); ?>">
                         <i class="icon-pencil"></i>
                     </a>
                     <a href="/category-attribute/delete/id/<?php echo $categoryAttribute->getId() ?>/url/<?php echo base64_encode($this->url); ?>">
