@@ -4854,3 +4854,85 @@ DESCRIBE `category` |
 DESCRIBE `category` |
 SELECT `category`.* FROM `category` WHERE (id = js) LIMIT 1 |
 SELECT `category`.* FROM `category` WHERE (id = js) LIMIT 1 |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = 8) LIMIT 1 |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (category_id = 8) ORDER BY `weight` ASC |
+DESCRIBE `category` |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = js) LIMIT 1 |
+SELECT `category`.* FROM `category` WHERE (id = js) LIMIT 1 |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = 8) LIMIT 1 |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (category_id = 8) ORDER BY `weight` ASC |
+DESCRIBE `category` |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = js) LIMIT 1 |
+SELECT `category`.* FROM `category` WHERE (id = js) LIMIT 1 |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = 8) LIMIT 1 |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (category_id = 8) ORDER BY `weight` ASC |
+DESCRIBE `category` |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = js) LIMIT 1 |
+SELECT `category`.* FROM `category` WHERE (id = js) LIMIT 1 |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (id = 59) LIMIT 1 |
+DESCRIBE `category_attribute` |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (id = 59) LIMIT 1 |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (id = 59) LIMIT 1 |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (id = 59) LIMIT 1 |
+UPDATE `category_attribute` SET `label` = ?, `category_id` = ?, `weight` = ?, `id` = ? WHERE (id = 59) |, branchies, 8, 0, 59
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = 8) LIMIT 1 |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (category_id = 8) ORDER BY `weight` ASC |
+DESCRIBE `category` |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = js) LIMIT 1 |
+SELECT `category`.* FROM `category` WHERE (id = js) LIMIT 1 |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (id = 58) LIMIT 1 |
+DESCRIBE `category_attribute` |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (id = 58) LIMIT 1 |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (id = 58) LIMIT 1 |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (id = 58) LIMIT 1 |
+UPDATE `category_attribute` SET `label` = ?, `category_id` = ?, `weight` = ?, `id` = ? WHERE (id = 58) |, couleure, 8, 30, 58
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = 8) LIMIT 1 |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (category_id = 8) ORDER BY `weight` ASC |
+DESCRIBE `category` |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = js) LIMIT 1 |
+SELECT `category`.* FROM `category` WHERE (id = js) LIMIT 1 |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = 8) LIMIT 1 |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (category_id = 8) ORDER BY `weight` ASC |
+DESCRIBE `category` |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = js) LIMIT 1 |
+SELECT `category`.* FROM `category` WHERE (id = js) LIMIT 1 |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = 8) LIMIT 1 |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (category_id = 8) ORDER BY `weight` ASC |
+DESCRIBE `category` |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = js) LIMIT 1 |
+SELECT `category`.* FROM `category` WHERE (id = js) LIMIT 1 |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = 8) LIMIT 1 |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (category_id = 8) ORDER BY `weight` ASC |
+DESCRIBE `category` |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = js) LIMIT 1 |
+SELECT `category`.* FROM `category` WHERE (id = js) LIMIT 1 |
