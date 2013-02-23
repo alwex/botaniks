@@ -9,6 +9,7 @@
     <thead>
         <tr>
             <th>label</th>
+            <th>poids</th>
             <th></th>
         </tr>
     </thead>
@@ -16,6 +17,7 @@
         <?php foreach ($this->categoryAttributes as $categoryAttribute) : ?>
             <tr>
                 <td><?php echo $categoryAttribute->getLabel() ?></td>
+                <td><?php echo $categoryAttribute->getWeight() ?></td>
                 <td>
                     <a href="/category-attribute/edit/id/<?php echo $categoryAttribute->getId() ?>">
                         <i class="icon-pencil"></i>

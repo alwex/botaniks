@@ -2,7 +2,6 @@
 
 class Application_Model_Abstract extends Zend_Db_Table_Abstract
 {
-
     // un id pour toutes
     // les tables
     public $c_id;
@@ -19,17 +18,9 @@ class Application_Model_Abstract extends Zend_Db_Table_Abstract
 
     public function __toString()
     {
-        $array = array();
-        foreach ($this as $attribute => $value)
-        {
-            if (preg_match('/^c_/', $attribute))
-            {
-                $col = substr($attribute, 2);
-                $array[$col] = $value;
-            }
-        }
+        $array = $this->__toArray();
         $toString = '<pre>' . var_export($array, 1) . '</pre>';
-        
+
         return $toString;
     }
 
@@ -40,6 +31,21 @@ class Application_Model_Abstract extends Zend_Db_Table_Abstract
             $attr = 'c_' . $attribute;
             $this->$attr = $data[$attribute];
         }
+    }
+
+    public function __toArray()
+    {
+    	$array = array();
+    	foreach ($this as $attribute => $value)
+    	{
+    		if (preg_match('/^c_/', $attribute))
+    		{
+    			$col = substr($attribute, 2);
+    			$array[$col] = $value;
+    		}
+    	}
+
+    	return $array;
     }
 
     public function save()
@@ -71,7 +77,7 @@ class Application_Model_Abstract extends Zend_Db_Table_Abstract
 
     /**
      * charge l'objet par sa clé primaire
-     * 
+     *
      * @param type $id
      */
     public function load($id)
@@ -121,12 +127,12 @@ class Application_Model_Abstract extends Zend_Db_Table_Abstract
     {
         $model = null;
         $models = $this->fetchAll($where, $order, $count, $offset);
-        
+
         if (count($models) > 0)
         {
             $model = array_shift($models);
         }
-        
+
         return $model;
     }
 }

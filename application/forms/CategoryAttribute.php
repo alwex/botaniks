@@ -11,11 +11,18 @@ class Application_Form_CategoryAttribute extends Zend_Form
             'filters' => array('StringTrim'),
             'validators' => array('NotEmpty'),
         ));
-        
+
         $this->addElement('hidden', 'category_id', array(
             'required' => true,
             'filters' => array('StringTrim'),
             'validators' => array('Int'),
+        ));
+
+        $this->addElement('text', 'weight', array(
+        		'label' => 'poids',
+        		'required' => true,
+        		'filters' => array('StringTrim'),
+        		'validators' => array('Int'),
         ));
 
         $this->addElement('submit', 'submit', array(

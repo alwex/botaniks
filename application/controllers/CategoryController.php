@@ -53,7 +53,7 @@ class CategoryController extends Zend_Controller_Action
         }
 
         $categoryAttribute = new Application_Model_CategoryAttribute;
-        $categoryAttributes = $categoryAttribute->fetchAll('category_id = ' . $category->getId());
+        $categoryAttributes = $categoryAttribute->fetchAll('category_id = ' . $category->getId(), 'weight');
 
         $this->view->assign(array(
             'category' => $category,
