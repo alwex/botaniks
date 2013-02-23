@@ -3,4 +3,8 @@ LICENSE.txt
 README.txt
 demos/
 extras/documentation
-
+nbproject
+.settings
+.buildpath
+.project
+application/logs/*.log

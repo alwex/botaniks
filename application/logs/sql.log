@@ -4736,3 +4736,51 @@ DESCRIBE `category` |
 SELECT `category`.* FROM `category` WHERE (id = 6) LIMIT 1 |
 DESCRIBE `node_attribute` |
 SELECT `node_attribute`.* FROM `node_attribute` WHERE (node_id = 9) |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (category_id = 7) |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (category_id = 6) |
+DESCRIBE `node` |
+SELECT `node`.* FROM `node` |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = 6) LIMIT 1 |
+DESCRIBE `node_attribute` |
+SELECT `node_attribute`.* FROM `node_attribute` WHERE (node_id = 9) |
+DESCRIBE `node` |
+SELECT `node`.* FROM `node` |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = 6) LIMIT 1 |
+DESCRIBE `node_attribute` |
+SELECT `node_attribute`.* FROM `node_attribute` WHERE (node_id = 9) |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (category_id = 7) |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (category_id = 6) |
+DESCRIBE `node` |
+SELECT `node`.* FROM `node` |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = 6) LIMIT 1 |
+DESCRIBE `node_attribute` |
+SELECT `node_attribute`.* FROM `node_attribute` WHERE (node_id = 9) |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (category_id = 7) |
+DESCRIBE `category_attribute` |
+SELECT `category_attribute`.* FROM `category_attribute` WHERE (category_id = 6) |
+DESCRIBE `node` |
+SELECT `node`.* FROM `node` |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = 6) LIMIT 1 |
+DESCRIBE `node_attribute` |
+SELECT `node_attribute`.* FROM `node_attribute` WHERE (node_id = 9) |
+DESCRIBE `node` |
+SELECT `node`.* FROM `node` |
+DESCRIBE `category` |
+SELECT `category`.* FROM `category` WHERE (id = 6) LIMIT 1 |
+DESCRIBE `node_attribute` |
+SELECT `node_attribute`.* FROM `node_attribute` WHERE (node_id = 9) |
